@@ -37,7 +37,7 @@ It can then be imported into any compatible Java project by including the follow
   	<dependency>
   		<groupId>com.maluuba</groupId>
   		<artifactId>napi-java</artifactId>
-  		<version>0.0.1-SNAPSHOT</0></version>
+  		<version>0.0.1-SNAPSHOT</version>
   	</dependency>
 ```
 
