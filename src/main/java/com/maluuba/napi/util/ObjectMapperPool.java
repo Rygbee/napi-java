@@ -1,8 +1,14 @@
-package org.maluuba.napi.util;
+package com.maluuba.napi.util;
 
 import org.codehaus.jackson.map.DeserializationConfig;
 import org.codehaus.jackson.map.ObjectMapper;
 
+/**
+ * A singleton instance of Jackson's ObjectMapper to use throughout the client
+ * library.
+ * 
+ * This ObjectMapper is configured to ignore unknown properties.
+ */
 public enum ObjectMapperPool {
   INSTANCE;
   

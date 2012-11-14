@@ -1,3 +1,5 @@
+package com.maluuba.napi.client;
+
 import java.io.IOException;
 import java.util.Properties;
 
@@ -5,15 +7,22 @@ import junit.framework.Assert;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.maluuba.napi.client.InterpretRequest;
-import org.maluuba.napi.client.InterpretResponse;
-import org.maluuba.napi.client.MaluubaNAPIClient;
-import org.maluuba.napi.client.NAPIAction;
-import org.maluuba.napi.client.NAPICategory;
 
-import static org.maluuba.napi.client.NAPIAction.*;
-import static org.maluuba.napi.client.NAPICategory.*;
+import com.maluuba.napi.client.InterpretRequest;
+import com.maluuba.napi.client.InterpretResponse;
+import com.maluuba.napi.client.MaluubaNAPIClient;
+import com.maluuba.napi.client.NAPIAction;
+import com.maluuba.napi.client.NAPICategory;
 
+import static com.maluuba.napi.client.NAPIAction.*;
+import static com.maluuba.napi.client.NAPICategory.*;
+
+/**
+ * A set of tests for each individual Action.
+ * 
+ * Make sure to provide a {@code MaluubaCredentials.properties} file on the classpath
+ * with an appropriate API_KEY property in order for these tests to pass.
+ */
 public class MaluubaNAPIClientTest {
   private MaluubaNAPIClient client;
   

@@ -1,5 +1,12 @@
-package org.maluuba.napi.client;
+package com.maluuba.napi.client;
 
+/**
+ * All possible Categories.
+ * 
+ * @see <a href="http://developer.maluuba.com/categories">http://developer.maluuba.com/categories</a> for a detailed description of
+ * each Category and Action.
+ *
+ */
 public enum NAPICategory {
   BUSINESS,
   CALL,

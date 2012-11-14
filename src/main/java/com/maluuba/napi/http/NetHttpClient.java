@@ -1,4 +1,4 @@
-package org.maluuba.napi.http;
+package com.maluuba.napi.http;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,14 +7,31 @@ import java.net.HttpURLConnection;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ * A basic implementation of {@code HttpClient} backed by {@link HttpURLConnection}
+ *
+ */
 public class NetHttpClient implements HttpClient {
 
+  /**
+   * The maximum amount of times to attempt a failed connection.
+   */
   private static final int MAX_RETRIES = 3;
+  /**
+   * The amount of time (in milliseconds) to wait for a connection to be established.
+   */
   private static final int CONNECT_TIMEOUT = 5 * 1000;
+  /**
+   * The amount of time (in milliseconds) to wait for a connection's input stream to
+   * read the server response.
+   */
   private static final int READ_TIMEOUT = 10 * 1000;
   
   private final Logger log = Logger.getLogger(NetHttpClient.class.getName());
   
+  /**
+   * @see HttpClient#request(HttpRequest)
+   */
   public HttpResponse request(HttpRequest request) throws IOException{
     for (int retryCount = 0; retryCount < MAX_RETRIES; retryCount++) {
       HttpURLConnection con = null;
