@@ -30,6 +30,14 @@ this repository and install it to your local Maven just by typing:
 mvn compile install
 ```
 
+Before installing, make sure to edit `src/main/resources/MaluubaCredentials.properties` to provide your API key:
+
+```
+$ cat src/main/resources/MaluubaCredentials.properties
+# You can find your API key at developer.maluuba.com
+API_KEY=your-api-key-here
+```
+
 It can then be imported into any compatible Java project by including the following dependency in your
 `pom.xml`:
 
@@ -39,14 +47,6 @@ It can then be imported into any compatible Java project by including the follow
   		<artifactId>napi-java</artifactId>
   		<version>0.0.1-SNAPSHOT</version>
   	</dependency>
-```
-
-Make sure to provide a `src/main/resources/MaluubaCredentials.properties` file before installing:
-
-```
-$ cat src/main/resources/MaluubaCredentials.properties
-# You can find your API key at developer.maluuba.com
-API_KEY=your-api-key-here
 ```
 
 Javadocs
