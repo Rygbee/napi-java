@@ -75,3 +75,15 @@ naturally-spoken sentence:
      * {dateRange=[{"start":1352955600000,"end":1353042000000}], title=[meeting to discuss the tps reports], timeRange=[{"start":18000000,"end":18000000}], contacts=[{name=bob}]}
      */
 ```
+
+Contact
+-------
+
+This API is still an early work in progress, so we greatly appreciate all the feedback we receive,
+whether it's about bugs, features, or use cases. Here are some of the ways you can bring things
+to our attention:
+
+  * Send an e-mail to our mailing list at [napi@maluuba.com](mailto:napi@maluuba.com)
+  * File an issue against our GitHub issue tracker (above)
+  * Post on our [Support Forums](http://developer.maluuba.com/forum)
+  * Join our [IRC channel (#maluuba on FreeNode)](irc://freenode.net/#maluuba) and talk to our developers in real-time
