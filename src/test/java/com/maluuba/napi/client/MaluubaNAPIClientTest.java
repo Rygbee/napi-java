@@ -214,7 +214,7 @@ public class MaluubaNAPIClientTest {
   
   @Test
   public void test_reminderSet() throws IOException {
-    checkPhrase("Remind me to put out the garbage tonight", REMINDER, REMINDER_SET, "message", "put out the garbage", "time", "11:00:00PM");
+    checkPhrase("Remind me to put out the garbage tonight", REMINDER, REMINDER_SET, "message", "put out the garbage", "time", "06:00:00PM");
   }
   
   @Test
