@@ -9,7 +9,7 @@ import java.net.URLEncoder;
  */
 public class InterpretRequest extends NAPIRequest {
   private final String phrase;
-  private final String language;
+  private final NAPILanguage language;
   
   /**
    * Constructs a new request for the {@code /interpret} endpoint.
@@ -19,16 +19,16 @@ public class InterpretRequest extends NAPIRequest {
    * @param phrase the phrase to categorize and extract entities for.
    */
   public InterpretRequest(String phrase) {
-    this(phrase, "ENGLISH");
+    this(phrase, NAPILanguage.ENGLISH);
   }
 
   /**
    * Constructs a new request for the {@code /interpret} endpoint.
    * 
    * @param phrase the phrase to categorize and extract entities for.
-   * @param language must be "FRENCH" or "ENGLISH"
+   * @param language the language of the phrase
    */  
-  public InterpretRequest(String phrase, String language) {
+  public InterpretRequest(String phrase, NAPILanguage language) {
       this.phrase = phrase;
       this.language = language;
   }
@@ -45,7 +45,7 @@ public class InterpretRequest extends NAPIRequest {
    * 
    * @return the developer's chosen language of the phrase
    */
-  public String getLanguage(){
+  public NAPILanguage getLanguage(){
       return language;
   }
 
@@ -62,6 +62,6 @@ public class InterpretRequest extends NAPIRequest {
         "phrase=%s&apikey=%s&language=%s",
         URLEncoder.encode(getPhrase()),
         getApiKey(),
-        getLanguage());
+        getLanguage().toString());
   }
 }
