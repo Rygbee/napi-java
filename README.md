@@ -45,7 +45,7 @@ It can then be imported into any compatible Java project by including the follow
   	<dependency>
   		<groupId>com.maluuba</groupId>
   		<artifactId>napi-java</artifactId>
-  		<version>0.0.1-SNAPSHOT</version>
+  		<version>0.0.2-SNAPSHOT</version>
   	</dependency>
 ```
 
@@ -75,6 +75,13 @@ naturally-spoken sentence:
      * {dateRange=[{"start":1352955600000,"end":1353042000000}], title=[meeting to discuss the tps reports], timeRange=[{"start":18000000,"end":18000000}], contacts=[{name=bob}]}
      */
 ```
+
+Languages
+---------
+
+ENGLISH: all categories are supported except for TVCHANNEL and TVVOLUME.
+
+FRENCH: only ALARM, SEARCH, TVCHANNEL, TVVOLUME, and WEATHER are supported.
 
 Contact
 -------
