@@ -6,6 +6,7 @@ import java.text.SimpleDateFormat;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -23,8 +24,8 @@ import com.maluuba.napi.client.TimeRange;
  *
  */
 public class EntityUtils {
-  private final static DateFormat DATE_RANGE_FORMATTER = new SimpleDateFormat("yyyy-MM-dd");
-  private final static DateFormat TIME_RANGE_FORMATTER = new SimpleDateFormat("hh:mm:ssa");
+  private final static DateFormat DATE_RANGE_FORMATTER = new SimpleDateFormat("yyyy-MM-dd", Locale.US);
+  private final static DateFormat TIME_RANGE_FORMATTER = new SimpleDateFormat("hh:mm:ssa", Locale.US);
   
   private final static Logger log = Logger.getLogger(EntityUtils.class.getName());
   
