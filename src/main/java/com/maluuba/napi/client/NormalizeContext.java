@@ -10,7 +10,9 @@ import java.util.TimeZone;
  *
  */
 public class NormalizeContext {
-  private final TimeZone timezone;
+  private TimeZone timezone;
+  
+  public NormalizeContext() {}
   
   public NormalizeContext(TimeZone timezone) {
     this.timezone = timezone;
