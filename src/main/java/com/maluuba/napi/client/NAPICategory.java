@@ -29,5 +29,13 @@ public enum NAPICategory {
   TEXT,
   SOCIAL,
   SPORTS,
-  APPLICATION
+  APPLICATION,
+  /**
+   * Only for FRENCH
+   */
+  TVCHANNEL,
+  /**
+   * Only for FRENCH
+   */
+  TVVOLUME
 }

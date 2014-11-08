@@ -81,6 +81,7 @@ public enum NAPIAction {
   SEARCH_DEFAULT,
   SEARCH_GOOGLE,
   SEARCH_RECIPES,
+  SEARCH_VIDEO,
   SEARCH_WIKIPEDIA,
   
   TEXT_DISPLAY,
@@ -99,5 +100,21 @@ public enum NAPIAction {
   
   SPORTS_MISC,
   
-  APPLICATION_LAUNCH
+  APPLICATION_LAUNCH,
+
+  TVCHANNEL_CHANNEL,
+  TVCHANNEL_DOWN,
+  TVCHANNEL_UP,
+  TVCHANNEL_PREVIOUS,
+
+  TVVOLUME_DOWN,
+  /**
+   * To re-activate sound, 
+   */
+  TVVOLUME_MUTE_OFF,
+  /**
+   * To disable sound
+   */
+  TVVOLUME_MUTE_ON,
+  TVVOLUME_UP
 }
